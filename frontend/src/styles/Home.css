@@ -1,0 +1,16 @@
+body {
+  background-color: #000; /* Optional dark theme */
+}
+
+.text-info {
+  color: #00cfff !important; /* Custom bright blue for headings */
+}
+
+.btn-info {
+  background-color: #00cfff;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #00b5e2;
+}

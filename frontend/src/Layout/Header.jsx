@@ -1,15 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <nav className="navbar navbar-expand-lg shadow-sm">
       <div className="container-fluid">
-        {/* 👈 Logo - left aligned */}
-        <a className="navbar-brand fw-bold text-primary" href="#">
+        {/* Logo */}
+        <Link to="/" className="navbar-brand fw-bold text-primary">
           Fit Mentor
-        </a>
+        </Link>
 
-        {/* ☰ Toggle for mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -22,31 +22,30 @@ const Header = () => {
           <span className="navbar-toggler-icon" />
         </button>
 
-        {/* 👉 Links - right aligned using ms-auto */}
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <Link to="/" className="nav-link active text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/about" className="nav-link text-white">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/contact" className="nav-link text-white">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className=" btn btn-primary text-white px-3 py-1 ms-2"
-                href="#"
+              <Link
+                to="/register"
+                className=" btn btn-primary text-white px-3 py-1 ms-2 "
               >
                 Register
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

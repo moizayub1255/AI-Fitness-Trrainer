@@ -1,24 +1,44 @@
-import React from 'react';
+import React from "react";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-white pt-5 pb-3 mt-5">
       <div className="container">
         <div className="row">
-          {/* Logo + About */}
+          {/* Logo */}
           <div className="col-md-4 mb-4">
-            <h4 className="fw-bold">Fit Mentor</h4>
-            <p >Your AI-powered fitness trainer to help you stay motivated and fit.</p>
+            <h4 className="fw-bold ">Fit Mentor</h4>
+            <p className="text-white">
+              Your AI-powered fitness trainer to help you stay motivated and
+              fit.
+            </p>
           </div>
 
           {/* Quick Links */}
           <div className="col-md-4 mb-4">
             <h5 className="mb-3">Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className=" text-decoration-none">Home</a></li>
-              <li><a href="#" className=" text-decoration-none">About</a></li>
-              <li><a href="#" className=" text-decoration-none">Contact</a></li>
-              <li><a href="#" className=" text-decoration-none">Register</a></li>
+              <li>
+                <Link to='/' className=" text-decoration-none text-white ">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to='/about' className=" text-decoration-none text-white">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to='/contact' className=" text-decoration-none text-white">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to='/regiater' className=" text-decoration-none text-white">
+                  Register
+                </Link>
+              </li>
             </ul>
           </div>
 
