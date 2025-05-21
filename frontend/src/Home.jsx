@@ -1,58 +1,45 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 // import './styles/Home.css'
-import Headandfoot from './Layout/headandfoot';
-import FitnessPrograms from './Layout/FitnessProgram';
+import Headandfoot from "./Layout/headandfoot";
+import FitnessPrograms from "./Layout/FitnessProgram";
 
 const Home = () => {
   return (
     <Headandfoot>
-    <div className="container-fluid py-5 text-white">
-      <div className="row align-items-center">
-        {/* Left Text Section */}
-        <div className="col-lg-6 mb-4">
-          <h1 className="display-4 fw-bold">
-            Transform <span className="text-info">Your Body</span><br />
-            With Advanced<br />
-            AI <span className="text-info">Technology</span>
-          </h1>
-          <p className="mt-4 mb-5 text-secondary">
-            Talk to our AI assistant and get personalized diet plans and<br />
-            workout routines designed just for you
-          </p>
+      <div className="row ">
+        <div className="left col-md-6 d-flex justify-content-center align-items-center">
+          <div className="ps-4">
+            <h2>Transform your body with Advanced AI Technology</h2>
+            <hr />
+            <p>
+              Talk to our AI Assistant and get personalized plans and workout
+              routines designed just for you
+            </p>
+            <div className=" d-flex justify-content-center align-items-center mt-4">
+              <h3>500+ Active Users</h3>
+              <h3>3 min Generation</h3>
+              <h3>100% Personalized</h3>
+            </div>
 
-          <div className="d-flex mb-4">
-            <div className="me-5">
-              <h5 className="text-info">500+</h5>
-              <small className="text-secondary">ACTIVE USERS</small>
-            </div>
-            <div className="me-5">
-              <h5 className="text-info">3min</h5>
-              <small className="text-secondary">GENERATION</small>
-            </div>
-            <div>
-              <h5 className="text-info">100%</h5>
-              <small className="text-secondary">PERSONALIZED</small>
-            </div>
+            <Link to="/generate-plan" className="btn text-dark mt-4">
+              Build your program
+            </Link>
           </div>
-
-          <button className="btn btn-info text-white fw-semibold px-4 py-2">
-            Build Your Program →
-          </button>
         </div>
 
-        {/* Right Image Section */}
-        <div className="col-lg-6 text-center">
-          <img
-            src="/images/home.PNG" // adjust this path to your project structure
-            alt="AI Body"
-            className="img-fluid"
-            style={{ maxHeight: '500px', objectFit: 'contain' }}
-          />
+        <div className="right col-md-6">
+          <div className="d-flex justify-content-center align-items-center">
+            <img
+              className="h-50 w-50 rounded"
+              src="/heropic.png"
+              alt="Fit Mentor"
+            />
+          </div>
         </div>
       </div>
-    </div>
-
-    <FitnessPrograms/>
+      <hr />
+      <FitnessPrograms />
     </Headandfoot>
   );
 };
