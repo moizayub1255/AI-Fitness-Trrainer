@@ -6,7 +6,7 @@ const Headandfoot = ({ children }) => {
   return (
     <div>
       <Header />
-      <main style={{ minHeight: "76vh" , paddingTop:"90px"}}>{children}</main>
+      <main style={{ minHeight: "76vh" , paddingTop:"30px"}}>{children}</main>
       <Footer />
     </div>
   );

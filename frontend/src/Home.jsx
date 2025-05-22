@@ -7,7 +7,7 @@ import FitnessPrograms from "./Layout/FitnessProgram";
 const Home = () => {
   return (
     <Headandfoot>
-      <div className="row ">
+      <div className="row">
         <div className="left col-md-6 d-flex justify-content-center align-items-center">
           <div className="ps-4">
             <h2>Transform your body with Advanced AI Technology</h2>

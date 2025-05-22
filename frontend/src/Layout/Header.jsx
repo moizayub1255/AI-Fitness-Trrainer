@@ -47,6 +47,14 @@ const Header = () => {
                 Register
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/login"
+                className=" btn text-dark px-3 py-1 ms-2 "
+              >
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
